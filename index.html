@@ -1,115 +1,348 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset = "UTF-8" />
-        <meta name="theme-color" content="#000000">
-        <meta name="viewport" content ='width=device-width, initial' />
-        <title>Sandbox 1.0 | cristian's play place</title>
-        <link rel="stylesheet" href ="./sandbox_style.css" />
-        <script src="./script.js" defer></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    </head>
-    <body>
-        <h1 class="title"><del><em><strong>Sandbox</strong></em></del><em><sub> 1.0</sub></em></h1>
-        <div class = "center_box">
-            <div class="grid">
-                <div class="box1">
-                    <h4 class="intro">Hello, my name is</h4>
-                    <h1 class="name">Cristian Garcia.</h1>
-                    <div class="wrapper">
-                        <p class="quote">I Love to</p>
-                        <div class="words">
-                            <span>make projects</span>
-                            <span>write code</span>
-                            <span>play chess</span>
-                            <span>eat burritos</span>
-                            <span>make projects</span>
-                        </div>
-                    </div>
-                    <p class="bio">Im a student at UCI, my major is <b>Computer Science and Engineering</b>, and this is my frist website. This website is meant for my use but youre more than welcome to look.</p>
-                    <div class="contact">
-                        <a href="mailto:cristiaan.gaarciaa@gmail.com" style="color: #1f885e;"> Say Hello</a> 
-                    </div>
-                </div>
-                <div class="box2">
-                    <div class="links">
-                        <div class="link">
-                            <a href="https://www.chess.com/member/trustincristian" target="_blank">
-                                <img class="icon" src="./chess_logo.jpg">
-                                <h3 style="display:inline-block;position: relative;bottom:20px;">Chess.com</h3>
-                            </a>
-                        </div>
-                        <div class="link">
-                            <a href="https://github.com/cristiangarcia03" target="_blank">
-                                <img class="icon" src="./git_logo.png">
-                                <h3 style="display:inline-block;position: relative;bottom:20px;">github</h3>
-                            </a>
-                        </div>
-                        <div class="link">
-                            <a href="https://www.linkedin.com/in/cristian-garcia-857252235/" target="_blank">
-                                <img class="icon" src="./linkin_logo.png">
-                                <h3 style="display:inline-block;position: relative;bottom:20px;">Linkin</h3>
-                            </a>
-                        </div>
-                        <div class="link">
-                            <a href="https://open.spotify.com/user/cristiancgarciaa" target="_blank">
-                                <img class="icon" src="./spotify.png">
-                                <h3 style="display:inline-block;position: relative;bottom:20px;">Spotify</h3>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="box4">
-                    <div class = 'progress_label'>
-                        <h3>LeetCode blind 75</h3>
-                        <div class="dropdown" data-dropdown>
-                            <button class="tab" data-dropdown-button>Other</button>
-                            <div class="dropdown_menu">
-                                <a class="dropdown_link" href="https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions" target="_blank">Blind 75</a>
-                                <a class="dropdown_link" href="https://www.techinterviewhandbook.org/best-practice-questions/" target="_blank">Handbook</a>
-                                <a class="dropdown_link" href="https://docs.google.com/spreadsheets/d/1_8Nz-0c7q1cTfm5WHG1rOjCe-w6T1SMD6Dn2Tz-apEQ/edit#gid=0" target="_blank">Google Sheet</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress_bg">
-                        <div class="progress" style="max-width: 69%; background-color: rgb(195, 31, 31);">
-                        </div>
-                        <h3 class="progress_stat">52/75</h3>
-                    </div>
-                    <div class = 'progress_label' stype="padding-top:16px;">
-                        <h3>Chess rating</h3>
-                    </div>
-                    <div class="progress_bg">
-                        <div class="progress" style="max-width: 75%;">
-                        </div>
-                        <h3 class="progress_stat">1127/1500</h3>
-                    </div>
-                </div>
-                <div class="box5">
-                    <h3 class="playerTitle">Now Playing</h3>
-                    <iframe class="Player" src="https://open.spotify.com/embed/album/3CCnGldVQ90c26aFATC1PW?utm_source=generator" width="95%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-                </div>
-                <div class="box6">
-                    <h3 class="Projects" data-text="Projects">Projects</h3>
-                    <div class="Section">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href ="./style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cristian's portfolio</title>
+    <script src="./script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- send email link-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- cursive link -->
+    <link href='https://fonts.googleapis.com/css?family=Cedarville Cursive' rel='stylesheet'>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Crimson+Pro">
     
-                        <div class="tictactoe">
-                            <a href="https://github.com/cristiangarcia03/TicTacToe" target="_blank">
-                                <img class="ttt_pic" src="./ttt.gif"></img>
-                                <h4 class="ttt">Unbeatable Tic Tac Toe</h4>
+
+    <!-- custon icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+</head>
+<body>
+    <header id = "header">
+        <a herf = "#" class = "logo"></a>
+        <nav>
+            <ul class = "navlist" id = "navlist">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#intro">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="menu" id="menu">
+            <i class="ri-menu-line"></i>
+        </div>
+    </header>
+    <div class="home" id = "home">
+
+        <div class ="left_home">
+            <h4 class="intro">Hello, my name is</h4>
+            <h1 class="name">Cristian Garcia.</h1>
+            <div class="wrapper">
+                <p class="quote">I Live for</p>
+                <div class="words">
+                    <span>Coding</span>
+                    <span>The OutDoors</span>
+                    <span>Chess</span>
+                    <span>Designing</span>
+                    <span>Learning</span>
+                    <span>Sports Drama</span>
+                    <span>Agua</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="resume" id = "resume" >
+        <div class= "projects" id = "projects">
+            <div class="proj_buttons">
+                <button id = "python_btn" onclick="openPython()"><i class="fa-brands fa-python"></i>Python/C++</button>
+                <button id = "html_btn" onclick="openHtml()"><i class="fa-brands fa-html5"></i>Html</button>
+                <button id = "swift_btn" onclick="openSwift()"><i class="fa-brands fa-swift"></i>Swift</button>
+            </div>
+
+            <div class = "content" id ="python_page">
+                <div class = "proj_box">
+                    <div class ="single_project">
+                        <div class ="left_proj">
+                            <a href="#" target="_blank">
+                                <img class="icon" src="images/game.png"></img>
                             </a>
                         </div>
-                        <div class="taskMaster">
-                            <a href="https://github.com/cristiangarcia03/TaskMaster" target="_blank">
-                                <img class="app_icon" src="./appicon.png"></img>
-                                <h4 class="task_master_title">TaskMaster</h4>
+                        <div class ="right_proj">
+                            <h4>Ball game</h4>
+                            <p>long body meant to be a place holder and to show what itll look like with some text
+                                long body meant to be a place holder and to show what itll look like with some text
+                                long body meant to be a place holder and to show what itll look like with some text
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class ="single_project">
+                        <div class ="left_proj">
+                            <a href="#" target="_blank">
+                                <img class="icon" src="images/tree.png"></img>
                             </a>
                         </div>
-    
+                        <div class ="right_proj">
+                            <h4>Balance Tree</h4>
+                            <p> like with some text</p>
+                        </div>
+                    </div>
+
+                    <div class ="single_project">
+                        <div class ="left_proj">
+                            <a href="#" target="_blank">
+                                <img class="icon" src="images/node.jpg"></img>
+                            </a>
+                        </div>
+                        <div class ="right_proj">
+                            <h4>Colorful Graphs</h4>
+                            <p> Implemented a interference graph data structure to solve register allocation problems via graph coloring with the Welsh Powell algorithm.
+                                Successfully achieved the capability to load a complete graph with 1000 vertices in under 10 seconds, showcasing the efficiency and scalability of the interference graph implementation.
+                                Wrote Comprehensive unit tests to ensure functionality of the graph data structure and register allocation algorithm.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class ="single_project">
+                        <div class ="left_proj">
+                            <a href="#" target="_blank">
+                                <img class="icon" src="images/skip.jpg"></img>
+                            </a>
+                        </div>
+                        <div class ="right_proj">
+                            <h4>Skip List</h4>
+                            <p> like with some text</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class = "content" id ="html_page">
+                <div class = "proj_box">
+                    <div class ="single_project">
+                        <div class ="left_proj">
+                            <a href="#" target="_blank">
+                                <img class="icon" src="images/website.jpg"></img>
+                            </a>
+                        </div>
+                        <div class ="right_proj">
+                            <h4>Personal Website</h4>
+                            <p>
+                                Designed and developed a personal website to showcase my software development skills and personal interests.
+                                Implemented JavaScript to add dynamic and interactive feature, and to incorporate third-party APIs and libraries, built using Visual Studio.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "content" id ="swift_page">
+                <div class = "proj_box">
+                    <div class ="single_project">
+                        <div class ="left_proj">
+                            <a href="#" target="_blank">
+                                <img class="icon" src="images/appicon.png"></img>
+                            </a>
+                        </div>
+                        <div class ="right_proj">
+                            <h4>TaskMaster</h4>
+                            <p>
+                                Developed an iOS application using Xcode, prioritizing a intuitive interface that seamlessly adapts to various devices seizes.
+                                Conducted comprehensive testing to guarantee the app’s stability, reliability, and optimal performance by utilizing JSONEncoder for a robust data storage and management system.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="educations">
+            <h2 class="education_title">Education</h2>
+            <div class="kipp">
+                <h3 class = "kipp_title"><b>Kipp King Collegiate High School</b></h3>
+                <h5 class = "major">GPA 3.8 | A.P Computer Science, A.P Calculus</h5>
+            </div>
+            <div class="uci">
+                <h3 class = "uci_title"><b>University of California, Irvine</b></h3>
+                <h4 class = "major">Computer Science and Engineering | GPA 3.0</h4>
+                <div class="classes">
+                    <ul>
+                        <li> <div class="class"><h4>Math 3A</h4></div>
+                            <div class = "class_info">
+                            <p>
+                                Systems of linear equations, matrix operations, determinants, eigenvalues and eigenvectors, vector spaces, subspaces, and dimension. 
+                            </p>
+
+                        </div> <div class="learn_more"><a href="https://catalogue.uci.edu/allcourses/math/" target="_blank">learn more</a></div></li>
+                        <li> <div class="class"><h4>Math 3D</h4></div>
+                            <div class = "class_info">
+                            <p>
+                                Linear differential equations, variation of parameters, constant coefficient cookbook, systems of equations, Laplace transforms, series solutions.
+
+                            </p>
+                        </div> <div class="learn_more"><a href="https://catalogue.uci.edu/allcourses/math/" target="_blank">learn more</a></div></li>
+                        <li> <div class="class"><h4>Math 2D</h4></div>
+                            <div class = "class_info">
+                            <p>Differential and integral calculus of real-valued functions of several real variables, including applications. Polar coordinates.
+                                
+                            </p>
+                        </div> <div class="learn_more"><a href="https://catalogue.uci.edu/allcourses/math/" target="_blank">learn more</a></div></li>
+                        <li> <div class="class"><h4>ICS 45C & 46C</h4></div>
+                            <div class = "class_info">
+                            <p>Focuses on implementation and mathematical analysis of fundamental data structures and algorithms. 
+                                Covers storage allocation and memory management techniques.
+                                
+                            </p>
+
+                        </div> <div class="learn_more"><a href="https://catalogue.uci.edu/allcourses/i_c_sci/" target="_blank">learn more</a></div></li>
+                        <li> <div class="class"><h4>ICS 31-33</h4></div>
+                            <div class = "class_info">
+                            <p>Intermediate-level language features and programming concepts for larger, more complex, higher-quality software. 
+                                Functional programming, name spaces, modules, class protocols, inheritance, iterators, generators, operator overloading, reflection. 
+                                Analysis of time and space efficiency.
+                                
+                            </p>
+
+                        </div> <div class="learn_more"><a href="https://catalogue.uci.edu/allcourses/i_c_sci/" target="_blank">learn more</a></div></li>
+                        <li> <div class="class"><h4>ICS 6B & 6D</h4></div>
+                            <div class = "class_info">
+                            <p>Boolean algebras, formal languages; finite automata.
+                                Covers essential tools from discrete mathematics used in computer science with an emphasis on the process of abstracting computational problems and analyzing them mathematically.
+                            </p>
+
+                        </div> <div class="learn_more"><a href="https://catalogue.uci.edu/allcourses/i_c_sci/" target="_blank">learn more</a></div></li>
+                        <li> <div class="class"><h4>Digital Logic System 31/31L</h4></div>
+                            <div class = "class_info">
+                            <p>laboratory course that teaches the design process of modeling, simulation and synthesis of 
+                                simple digital designs. Students learn how to model designs on different levels of abstraction using C and VHDL.
+                                
+                            </p>
+
+                        </div> <div class="learn_more"><a href="https://catalogue.uci.edu/allcourses/eecs/" target="_blank">learn more</a></div></li>
+                        <li> <div class="class"><h4>Classical Physics 7C & 7D</h4></div>
+                            <div class = "class_info">
+                            <p>Course teaches how to apply physics models to the motion of objects using the following topics: force, energy, momentum, rotation, gravity, Electricity, and magnetism.
+                                
+                            </p>
+
+                        </div> <div class="learn_more"><a href="https://catalogue.uci.edu/allcourses/physics/" target="_blank">learn more</a></div> </li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+            <div class ="clubs">
+                <h3 class = "clubs_title"><b>Clubs</b></h3>
+                
+                <div class = "club">
+                    <div class = "ops_left">
+                        <h3>Open Project Space</h3>
+                        <p> OPS is a year-long technical course in embedded systems. 
+                            We introduce engineering students to topics relevant to their coursework and 
+                            potential career paths: integrated circuits, breadboarding, soldering, microcontrollers, 
+                            embedded programming with C++, PCB design, and hardware communication. </p>
+                    </div>
+                    <div class = "ops_right">
+                        <img src="images/ops.png" alt="blank">
                     </div>
                 </div>
             </div>
         </div>
-        <h3 class="bottom">built by cristian &#169.</h3>
-    </body>
+
+    </div>
+
+
+    <div class="intro" id = "intro">
+        <h3 class="Cover_title">Cover Letter</h3>
+        <p style="text-indent: 50px;font-family: 'Crimson Pro', serif;">     As a highly motivated and dedicated student pursuing a Computer Science and Engineering degree, I am eager to gain practical experience in a professional software development environment.<br><br>
+            I am completing my third year of study in the Computer Science program. Throughout my coursework, I have gained a strong foundation in programming languages, algorithms, data structures, and software development methodologies. During my coursework, I had the opportunity to apply my knowledge through various coding projects and team collaborations.<br><br>
+            
+            In addition to my coursework, I've eagerly explored the world of software development by undertaking a range of personal projects. I've created web applications using HTML, CSS, and JavaScript, focusing on delivering user-friendly and responsive designs. I've ventured into mobile app development, crafting an iOS application using Swift, with an emphasis on intuitive user interfaces. My journey in programming has also led me to explore the intricacies of data structures and algorithms in C++, where I've deepened my understanding of performance optimization.<br><br>
+                        
+            My pursuit of excellence in software development is fueled by a relentless curiosity and a commitment to delivering high-quality solutions. I am eager to leverage my existing skills and passion for technology to contribute effectively to your team and absorb invaluable real-world experience.<br><br>
+            I appreciate your time and consideration and look forward to the opportunity to discuss how I can contribute to your organization and continue my growth as a software developer.<br><br>
+            <br>
+            -Best
+            
+        </p>
+        <div class="downloads">
+            
+            <a class = "button-54" href="images/current.pdf" download target="_blank">Resume
+                <i class="ri-download-line"></i>  
+              </a>
+              <a class = "button-54" href="images/Cristian Garcia Cover letter.pdf" download target="_blank">Cover Letter
+                <i class="ri-download-line"></i>  
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="contact" id = "contact">
+        <div class = "inside_contact">
+            <div class = "contacts_section">
+
+                <div class = "contact_link">
+                    <a href="https://www.chess.com/member/trustincristian" target="_blank">
+                        <div class = "link_img">
+                            <img src="images/logo_chess.jpg">
+                        </div>
+                        <div class = "link_title">
+                            <h3>Chess.com</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class = "contact_link">
+                    <a href="https://github.com/cristiangarcia03" target="_blank">
+                        <div class = "link_img">
+                            <img src="images/logo_github.png">
+                        </div>
+                        <div class = "link_title">
+                            <h3>Gitbub</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class = "contact_link">
+                    <a href="https://www.linkedin.com/in/cristian-garcia-857252235/" target="_blank">
+                        <div class = "link_img">
+                            <img src="images/linkedin.png">
+                        </div>
+                        <div class = "link_title">
+                            <h3>Linkedin</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class = "contact_link">
+                    <a href="https://open.spotify.com/user/cristiancgarciaa?si=845f715a100e4e7a" target="_blank">
+                        <div class = "link_img">
+                            <img src="images/logo_spotify.png">
+                        </div>
+                        <div class = "link_title">
+                            <h3>Spotify</h3>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class = "email_section">
+                <form class = "contact_form" onsubmit="sendEmail(); reset(); return false;">
+                    <h3>Get in touch is sadly not working</h3>
+                    <input type="text" id="input_name" placeholder="Enter your name" required>
+                    <input type="email" id="input_email" placeholder="Enter email" required>
+                    <textarea id = "email_message" rows = "4" placeholder="Type here"></textarea>
+                    <button type = "send_eamil">send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
 </html>
