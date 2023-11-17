@@ -85,102 +85,17 @@ body {
 
 .intro{
     color: #FAF9F6;
-    font-size: 2rem;
+    font-size: 3rem;
     margin: 0;
 }
 
 .name{
     padding: 0;
     margin: 0;
-    font-size: 4rem;
+    font-size: 6rem;
     color: #FAF9F6;
 }
 
-.quote{
-    color: #FAF9F6;
-    padding: 15px 0;
-    font-size: 3.4rem;
-    -webkit-text-stroke:0.25vw #FAF9F6;
-    transition: all 1s;
-}
-
-.wrapper{
-    display: flex;
-    box-sizing: content-box;
-    height: 75px;
-    width: 100%;
-    transition: all 1s;
-}
-
-.wrapper span{
-    color: #000000;
-    display: block;
-    height: 100%;
-    -webkit-text-stroke:0.25vw #000000;
-    font-size: 3.5rem;
-    padding-top: 32px;
-    padding-left: 15px;
-    animation: spin_words 9s infinite;
-}
-
-.words{
-  overflow: hidden;
-  min-width: fit-content;
-  -webkit-text-stroke:0.2vw #000000;
-}
-
-@keyframes spin_words{
-    10%{
-        transform: translateY(-125%);
-    }
-    25%{
-        transform: translateY(-120%);
-    }
-    35%{
-        transform: translateY(-225%);
-    }
-    50%{
-        transform: translateY(-220%);
-    }
-    60%{
-        transform: translateY(-325%);
-    }
-    75%{
-        transform: translateY(-320%);
-    }
-    85%{
-        transform: translateY(-425%);
-    }
-    100%{
-        transform: translateY(-420%);
-    }
-}
-
-
-.about{
-    text-align: center;
-    color: #FAF9F6;
-    font-size: 2rem;
-    margin: 0;
-}
-
-.right_home{
-    width: 40%;
-    height: 100%;
-    min-height: 600px;
-    align-content: center;
-    float: right;
-    margin-top: 30px;
-}
-.right_home p{
-    color: #fff;
-    backdrop-filter: blur(10px);
-    background-color: rgba(12, 12, 12, 0.728);
-    border-radius: 10px;
-    padding: 5% 9%;
-    margin-top: 30px;
-    font-size: clamp(1.0rem, 2.2vw, 1.4rem);
-}
 .left_home{
     height: 100%;
     min-height: 600px;
@@ -236,7 +151,7 @@ body {
     overflow: hidden;
     width: 80%;
     margin: 20px auto;
-    height: 900px;
+    height: 1000px;
 }
 
 .content {
@@ -352,12 +267,14 @@ body {
     width: 80%;
     color: #FAF9F6;
     height: min(100px, auto);
-
+    font-size: 1.5rem;
     margin: 0 auto;
+    padding: 20px 0;
 
 }
 
 .kipp{
+    font-size: 1.5rem;
     width: 80%;
     height: 50px;
     margin: 0 auto;
@@ -412,16 +329,15 @@ body {
     font-size: 20px;
     width: 90%;
 }
-.class p{ 
-    margin-top: 10px;
-    font-size: 14px;
-    color:  #FAF9F6;
-}
 
 .class_info{
     margin: 0 12px;
     height: 50%;
     overflow-y:auto;
+}
+
+.class_info p{
+    font-size: 17px;
 }
 
 .learn_more{
@@ -432,6 +348,8 @@ body {
 }
 
 .learn_more a{
+    padding-bottom: 5px;
+    padding-left: 2px;
     font-size: 13px;
     text-decoration: none;
     color: #FAF9F6;
@@ -466,11 +384,13 @@ body {
 }
 
 .ops_left h3{
+    font-size: 25px;
     padding-left: 5px;
     color: #FAF9F6;
 }
 
 .ops_left p{
+    font-size: 20px;
     padding: 10px 5px;
     color:#FAF9F6;
 }
@@ -599,7 +519,7 @@ body {
 
 
 #home{
-    background-image: url("painting.jpg");
+    background-image: url("images/painting.jpg");
     background-repeat: no-repeat;
     background-position-x: left;
     background-position-y:bottom;
